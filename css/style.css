@@ -1,0 +1,235 @@
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+p {
+  font-size: 13px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.portfolio {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.work {
+  margin-bottom: 60px;
+}
+
+/* 通常 */
+.work img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+/* 一覧ページ（今まで通り） */
+.work img {
+  width: 100%;
+}
+
+.detail-page .work-detail {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.detail-page .item {
+  display: flex;
+  gap: 50px;
+}
+
+.detail-page .item img {
+  width: 500px;
+}
+
+@media (max-width: 767px) {
+  .detail-page .item {
+    flex-direction: column;
+  }
+
+  .detail-page .item img {
+    width: 100%;
+  }
+}
+.credit {
+  text-align: right;
+  font-size: 11px;
+  color: #999;
+  margin-top: 2px;
+  letter-spacing: 0.5px;
+}
+.work img {
+  margin-bottom: 5px; /* クレジットとの距離調整 */
+}
+
+/* 小さい画像だけ別指定 */
+.work img.small-img {
+  width: 50%;
+  display: block;
+  margin: 40px auto;
+}
+
+.work h2 {
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.4;
+}
+
+a:visited {
+  color: black;
+}
+.work p {
+  font-size: 12px;
+  color: black;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  max-width: 1100px; /* ←広げる */
+  margin: 0; /* ←中央に戻す（超重要） */
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 0;
+    padding-left: 0;
+  }
+}
+.gallery {
+  width: 65%;
+  display: block;
+}
+
+.script {
+  width: 48%;
+  text-align: left;
+  max-width: 600px;
+}
+
+script p {
+  line-height: 1.6;
+}
+
+footer {
+  margin-top: auto; /* ←これで下に固定 */
+  text-align: right;
+  padding: 20px;
+  font-size: 12px;
+  color: #666;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 750px;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+/* モーダル全体 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+
+  justify-content: flex-start; /* ←上寄せ */
+  align-items: center; /* ←中央 */
+  flex-direction: column;
+  padding-top: 5%; /* ←少し上から余白 */
+}
+/* 拡大画像 */
+.modal-img {
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  margin: 0%;
+}
+
+/* 閉じるボタン */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  color: rgb(181, 181, 181);
+  font-size: 30px;
+  cursor: pointer;
+}
+.caption {
+  margin-top: 20px;
+  width: 100%; /* ←画面幅いっぱい */
+  padding-right: 30px; /* ←右端から少し余白 */
+  color: rgb(181, 181, 181);
+  font-size: 12px;
+  text-align: right; /* ←右端に寄せる */
+}
+@media (max-width: 767px) {
+  .caption {
+    padding-right: 20px;
+  }
+}
+.gallery img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  opacity: 0.8;
+  transform: scale(1.02);
+}
+.pdf-link {
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.pdf-link a {
+  text-decoration: underline;
+  color: #333;
+}
+
+.pdf-link a:hover {
+  opacity: 0.6;
+}
