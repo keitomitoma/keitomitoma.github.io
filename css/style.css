@@ -75,8 +75,8 @@ body {
 }
 .credit {
   text-align: right;
-  font-size: 11px;
-  color: #999;
+  font-size: 8px;
+  color: #8f8f8f;
   margin-top: 2px;
   letter-spacing: 0.5px;
 }
@@ -251,4 +251,22 @@ script {
 
 .pdf-link a:hover {
   opacity: 0.6;
+}
+.page {
+  width: 100%;
+}
+
+.inner {
+  position: relative;
+  max-width: 800px; /* ← portfolioと同じにする */
+  margin: 0 auto;
+}
+
+.home {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  font-size: 12px;
+  color: #636363;
 }
