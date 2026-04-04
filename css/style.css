@@ -3,7 +3,7 @@ h1 {
 }
 
 h2 {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -252,21 +252,37 @@ script {
 .pdf-link a:hover {
   opacity: 0.6;
 }
-.page {
-  width: 100%;
+@media (max-width: 767px) {
+  .portfolio {
+    padding: 0 15px;
+  }
+
+  h2 {
+    line-height: 1.4;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  .work p {
+    word-break: break-word;
+  }
+}
+@media (max-width: 767px) {
+  .script {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+/* 通常（PC）では改行しない */
+.sp-br {
+  display: none;
 }
 
-.inner {
-  position: relative;
-  max-width: 800px; /* ← portfolioと同じにする */
-  margin: 0 auto;
-}
-
-.home {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-
-  font-size: 12px;
-  color: #636363;
+/* スマホだけ改行する */
+@media (max-width: 767px) {
+  .sp-br {
+    display: block;
+  }
 }
