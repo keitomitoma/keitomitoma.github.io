@@ -29,6 +29,14 @@ body {
   padding: 20px;
 }
 
+.cv .profile {
+  margin-bottom: 1.5em;
+}
+
+.cv .exhibitions {
+  margin-top: 0;
+}
+
 .portfolio {
   max-width: 800px;
   margin: 0 auto;
